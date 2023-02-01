@@ -1,0 +1,52 @@
+/* Home */
+
+#navbar .container h1 a span{
+
+    display: none;
+    
+    }
+    
+    
+    
+    #home .home-content .text-3 span{
+    
+    color: #000000;
+    
+    }
+    
+    
+    
+    /* Portfolio */
+    
+    .projects{
+    
+    justify-content: center;
+    
+    }
+    
+    .project{
+    
+    flex: 0;
+    
+    }
+    
+    
+    
+    /* About */
+    
+    .about-content{
+    
+    flex-direction: column;
+    
+    }
+    
+    
+    
+    /* Contact */
+    
+    .contact-content{
+    
+    flex-direction: column;
+    
+    }
+    

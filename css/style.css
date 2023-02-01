@@ -1,0 +1,82 @@
+html{
+    min-height: 100%;
+}
+body {
+  font-family: "Exo 2", sans-serif;
+  background-color: #00b5f7;
+    background-size: 53px 53px;
+    background-image: radial-gradient(
+        transparent 28px,
+        #ffffff 28px,
+        #ffffff 32px,
+        transparent 32px
+    );
+}
+
+#card {
+  width: 40%;
+  height: relative;
+  box-sizing: border-box;
+
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  box-shadow: 4px 8px 1px 5px rgba(21, 74, 219, 0.547);
+  margin: 10px auto;
+  position: relative;
+  /* overflow: hidden; */
+}
+h1 {
+  font-size: 2em;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  line-height: 200px;
+  margin: 0;
+}
+#upper-side {
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  box-shadow: 4px 1px 5px;
+}
+
+#marquee {
+  /* box-shadow: 1px; */
+  /* border-radius: 5px; */
+  /* Smooth border */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px #ccc;
+}
+.invitation{
+        font-size: 4rem;
+        font-weight: 300;
+        text-decoration: underline;
+}
+.rise {
+	text-shadow: -0.01em -0.01em 0.01em #000;
+	animation: rise 2s ease-in-out 0.5s forwards;
+}
+
+@keyframes rise {
+	to {
+		text-shadow: 0em 0.01em rgb(27, 187, 245), 0em 0.02em rgb(39, 208, 242), 0em 0.02em 0.03em rgb(33, 166, 244),
+			-0.01em 0.01em #333, -0.02em 0.02em #333, -0.03em 0.03em #333,
+			-0.04em 0.04em #333, -0.01em -0.01em 0.03em #000, -0.02em -0.02em 0.03em #000,
+			-0.03em -0.03em 0.03em #000;
+		transform: translateY(-0.025em) translateX(0.04em);
+	}
+}
+footer {
+    display: block;
+    text-align: center;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 1;
+    bottom:-40px;
+    left: -10px;
+    margin-right: -18px;
+    margin-top: 100%;
+    }
+  
