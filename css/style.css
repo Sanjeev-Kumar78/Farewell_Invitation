@@ -1,30 +1,31 @@
-html{
-    min-height: 100%;
+html {
+  min-height: 100%;
+	scroll-behavior: auto;
 }
 body {
   font-family: "Exo 2", sans-serif;
+  background-image: url("../assets/774ef2dfda9c2bc64705c3817c2a1d37.jpg");
+/*
   background-color: #0b0080;
-    background-size: 53px 53px;
-    background-image: radial-gradient(
-        transparent 28px,
-        #1288e2 28px,
-        #1d63e4 32px,
-        transparent 32px
-    );
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  background-size: 53px 53px;
+  background-image: radial-gradient(transparent 28px, #1288e2 28px, #1d63e4 32px, transparent 32px);
+*/
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-
 #card {
   width: auto;
   padding-left: 15px;
   height: relative;
   box-sizing: border-box;
-  display:flex;
+  background-image: url("../assets/School.jpg");
+  background-size: cover;
+  background-attachment: scroll;
+  display: flex;
   border: 2px solid rgb(0, 0, 0);
   border-radius: 10px;
-  box-shadow: 4px 8px 1px 5px rgba(21, 74, 219, 0.547);
+  box-shadow: 4px 8px 1px 2px rgba(25,55,10,0.2);
   margin: 10px auto;
   position: relative;
   overflow: hidden;
@@ -45,7 +46,6 @@ h1 {
   left: 0;
   box-shadow: 4px 1px 5px;
 }
-
 #marquee {
   /* box-shadow: 1px; */
   /* border-radius: 5px; */
@@ -54,32 +54,27 @@ h1 {
   border-radius: 5px;
   box-shadow: 0 1px 1px #ccc;
 }
-.invitation{
-        font-size: 4rem;
-        font-weight: 300;
-        text-decoration: underline;
+.invitation {
+  font-size: 4rem;
+  font-weight: 300;
+  text-decoration: underline;
 }
 .rise {
-	text-shadow: -0.01em -0.01em 0.01em #000;
-	animation: rise 2s ease-in-out 0.5s forwards;
+  text-shadow: -0.01em -0.01em 0.01em #000;
 }
-
 @keyframes rise {
-	to {
-		text-shadow: 0em 0.01em rgb(27, 187, 245), 0em 0.02em rgb(39, 208, 242), 0em 0.02em 0.03em rgb(33, 166, 244),
-			-0.01em 0.01em #333, -0.02em 0.02em #333, -0.03em 0.03em #333,
-			-0.04em 0.04em #333, -0.01em -0.01em 0.03em #000, -0.02em -0.02em 0.03em #000,
-			-0.03em -0.03em 0.03em #000;
-		transform: translateY(-0.025em) translateX(0.04em);
-	}
+  to {
+    text-shadow: 0em 0.01em rgb(27, 187, 245), 0em 0.02em rgb(39, 208, 242), 0em 0.02em 0.03em rgb(33, 166, 244), -0.01em 0.01em #333, -0.02em 0.02em #333, -0.03em 0.03em #333, -0.04em 0.04em #333, -0.01em -0.01em 0.03em #000, -0.02em -0.02em 0.03em #000, -0.03em -0.03em 0.03em #000;
+    transform: translateY(-0.025em) translateX(0.04em);
+  }
 }
 footer {
-    margin-top: auto;
-    text-align: center;
-    background-color: #ffffff;
-    position: relative;
-    z-index: 1;
-    bottom:-40px;
-    left: -10px;
-    margin-right: -18px;
-    }
+  margin-top: auto;
+  text-align: center;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+  bottom: -40px;
+  left: -10px;
+  margin-right: -18px;
+}
