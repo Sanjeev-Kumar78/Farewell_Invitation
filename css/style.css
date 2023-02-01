@@ -3,35 +3,40 @@ html{
 }
 body {
   font-family: "Exo 2", sans-serif;
-  background-color: #00b5f7;
+  background-color: #0b0080;
     background-size: 53px 53px;
     background-image: radial-gradient(
         transparent 28px,
-        #ffffff 28px,
-        #ffffff 32px,
+        #1288e2 28px,
+        #1d63e4 32px,
         transparent 32px
     );
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 #card {
-  width: 40%;
+  width: auto;
+  padding-left: 15px;
   height: relative;
   box-sizing: border-box;
-
+  display:flex;
   border: 2px solid rgb(0, 0, 0);
   border-radius: 10px;
   box-shadow: 4px 8px 1px 5px rgba(21, 74, 219, 0.547);
   margin: 10px auto;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 h1 {
   font-size: 2em;
   font-weight: 300;
   text-align: center;
   color: #fff;
-  line-height: 200px;
-  margin: 0;
+  text-shadow: 0 1px 1px #000;
+  padding-right: 5px;
+  margin-right: 10px;
 }
 #upper-side {
   height: 50px;
@@ -69,7 +74,7 @@ h1 {
 	}
 }
 footer {
-    display: block;
+    margin-top: auto;
     text-align: center;
     background-color: #ffffff;
     position: relative;
@@ -77,6 +82,4 @@ footer {
     bottom:-40px;
     left: -10px;
     margin-right: -18px;
-    margin-top: 100%;
     }
-  
