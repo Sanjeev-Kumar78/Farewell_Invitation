@@ -5,11 +5,9 @@ html {
 body {
   font-family: "Exo 2", sans-serif;
   background-image: url("../assets/774ef2dfda9c2bc64705c3817c2a1d37.jpg");
-/*
-  background-color: #0b0080;
-  background-size: 53px 53px;
-  background-image: radial-gradient(transparent 28px, #1288e2 28px, #1d63e4 32px, transparent 32px);
-*/
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  backdrop-filter: saturate(180%) blur(10px);
+  background-color: #5cacea;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -58,9 +56,12 @@ h1 {
   font-size: 4rem;
   font-weight: 300;
   text-decoration: underline;
+  display: block;
+  
 }
 .rise {
   text-shadow: -0.01em -0.01em 0.01em #000;
+
 }
 @keyframes rise {
   to {
@@ -72,9 +73,23 @@ footer {
   margin-top: auto;
   text-align: center;
   background-color: #ffffff;
+  box-shadow: 2px 2px 2px 5px rgba(39, 38, 38, 0.2);
   position: relative;
   z-index: 1;
   bottom: -40px;
   left: -10px;
   margin-right: -18px;
+}
+#students{
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: 20px;
+}
+#button{
+  position: relative;
+  margin-left:auto;
+  margin-top: 100%;
+  display: absolute;
+  justify-content: left;
 }
