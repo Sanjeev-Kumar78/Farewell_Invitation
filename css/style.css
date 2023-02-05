@@ -5,28 +5,25 @@ html {
 body {
   font-family: "Exo 2", sans-serif;
   background-image: url("../assets/774ef2dfda9c2bc64705c3817c2a1d37.jpg");
-  -webkit-backdrop-filter: saturate(180%) blur(10px);
-  backdrop-filter: saturate(180%) blur(10px);
+  background-size: cover;
   background-color: #5cacea;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  margin: 0;
+  display: contents;
 }
 #card {
   width: auto;
-  padding-left: 15px;
   height: relative;
   box-sizing: border-box;
-  background-image: url("../assets/School.jpg");
-  background-size: cover;
-  background-attachment: scroll;
-  display: flex;
+  /* background-image: url("../assets/School.jpg");
+  background-size:cover; */
+  display: contents;
   border: 2px solid rgb(0, 0, 0);
   border-radius: 10px;
   box-shadow: 4px 8px 1px 2px rgba(25,55,10,0.2);
   margin: 10px auto;
-  position: relative;
-  overflow: hidden;
+  max-height: max-content;
+
 }
 h1 {
   font-size: 2em;
@@ -40,7 +37,7 @@ h1 {
 #upper-side {
   height: 50px;
   width: 100%;
-  position: absolute;
+  position: relative;
   left: 0;
   box-shadow: 4px 1px 5px;
 }
@@ -56,7 +53,6 @@ h1 {
   font-size: 4rem;
   font-weight: 300;
   text-decoration: underline;
-  display: block;
   
 }
 .rise {
@@ -70,26 +66,42 @@ h1 {
   }
 }
 footer {
-  margin-top: auto;
-  text-align: center;
+  margin-top: calc(100vh);
   background-color: #ffffff;
   box-shadow: 2px 2px 2px 5px rgba(39, 38, 38, 0.2);
   position: relative;
   z-index: 1;
   bottom: -40px;
   left: -10px;
-  margin-right: -18px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
-#students{
-  justify-content: center;
-  flex-wrap: wrap;
-  position: relative;
-  margin-top: 20px;
+
+
+#message{
+  float: left;
+  position: absolute;
+  max-width: max-content;
+  padding: auto;
+  background-color: #ffffff;
+  border: 2px solid #000;
+  border-radius: 5px;
+  box-shadow: 4px 8px 1px 2px rgba(25,55,10,0.2);
+
+
+  
 }
-#button{
+.web{
+  width: calc(85.5em);
+  height: calc(48em);
   position: relative;
-  margin-left:auto;
-  margin-top: 100%;
-  display: absolute;
-  justify-content: left;
+  background-color: #000000;
+  border: 1px solid #000;
+  margin: 0 auto;
+  margin-left: 50px;
+  margin-bottom: 50px;
+
 }
