@@ -105,3 +105,11 @@ footer {
   margin-bottom: 50px;
 
 }
+#doc{
+  display: grid;
+  /* center */
+  justify-content: center;
+  border: 2px;
+  border-radius: 5px;
+  width: 100%;
+}
