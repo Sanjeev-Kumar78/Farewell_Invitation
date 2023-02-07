@@ -7,17 +7,16 @@ body {
   background-image: url("../assets/774ef2dfda9c2bc64705c3817c2a1d37.jpg");
   background-size: cover;
   background-color: #5cacea;
-  min-height: 100vh;
   margin: 0;
-  display: contents;
+  height: fit-content;
 }
 #card {
-  width: auto;
-  height: relative;
-  box-sizing:content-box;
+  /* width: auto; */
+  height: auto;
+  box-sizing:border-box;
   /* background-image: url("../assets/School.jpg");
   background-size:cover; */
-  display: grid;
+  display: auto;
   justify-content: center;
   border: 2px solid rgb(0, 0, 0);
   border-radius: 10px;
@@ -37,7 +36,7 @@ h1 {
 }
 #upper-side {
   height: 50px;
-  width: 100%;
+  /* width: 100%; */
   box-shadow: 4px 1px 5px;
   margin-bottom: 10px;
 }
@@ -48,6 +47,7 @@ h1 {
   border: 1px solid #ccc;
   display: grid;
   justify-content: center;
+  width: 100%;
   border-radius: 5px;
   box-shadow: 0 1px 1px #ccc;
   
@@ -70,7 +70,8 @@ h1 {
 }
 footer {
   margin-top: calc(100vh);
-  background-color: #ffffff;
+  background-color: #000000;
+  color: #ffffff;
   box-shadow: 2px 2px 2px 5px rgba(39, 38, 38, 0.2);
   z-index: 1;
   bottom: -40px;
@@ -83,18 +84,10 @@ footer {
 }
 
 
-.web{
-  width: calc(85.5em);
-  height: calc(48em);
-  background-color: #000000;
-  border: 1px solid #000;
-
-}
 #doc{
   display: grid;
   /* center */
   justify-content: center;
   border: 2px;
   border-radius: 5px;
-  width: 100%;
 }
