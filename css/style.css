@@ -14,40 +14,43 @@ body {
 #card {
   width: auto;
   height: relative;
-  box-sizing: border-box;
+  box-sizing:content-box;
   /* background-image: url("../assets/School.jpg");
   background-size:cover; */
-  display: contents;
+  display: grid;
+  justify-content: center;
   border: 2px solid rgb(0, 0, 0);
   border-radius: 10px;
   box-shadow: 4px 8px 1px 2px rgba(25,55,10,0.2);
   margin: 10px auto;
-  max-height: max-content;
+  
 
 }
 h1 {
   font-size: 2em;
   font-weight: 300;
   text-align: center;
-  color: #fff;
-  text-shadow: 0 1px 1px #000;
+  color: #0e94ee;
+  text-shadow: 1 8px 5px #828282;
   padding-right: 5px;
   margin-right: 10px;
 }
 #upper-side {
   height: 50px;
   width: 100%;
-  position: relative;
-  left: 0;
   box-shadow: 4px 1px 5px;
+  margin-bottom: 10px;
 }
 #marquee {
   /* box-shadow: 1px; */
   /* border-radius: 5px; */
   /* Smooth border */
   border: 1px solid #ccc;
+  display: grid;
+  justify-content: center;
   border-radius: 5px;
   box-shadow: 0 1px 1px #ccc;
+  
 }
 .invitation {
   font-size: 4rem;
@@ -69,7 +72,6 @@ footer {
   margin-top: calc(100vh);
   background-color: #ffffff;
   box-shadow: 2px 2px 2px 5px rgba(39, 38, 38, 0.2);
-  position: relative;
   z-index: 1;
   bottom: -40px;
   left: -10px;
@@ -81,28 +83,11 @@ footer {
 }
 
 
-#message{
-  float: left;
-  position: absolute;
-  max-width: max-content;
-  padding: auto;
-  background-color: #ffffff;
-  border: 2px solid #000;
-  border-radius: 5px;
-  box-shadow: 4px 8px 1px 2px rgba(25,55,10,0.2);
-
-
-  
-}
 .web{
   width: calc(85.5em);
   height: calc(48em);
-  position: relative;
   background-color: #000000;
   border: 1px solid #000;
-  margin: 0 auto;
-  margin-left: 50px;
-  margin-bottom: 50px;
 
 }
 #doc{
