@@ -8,7 +8,6 @@ body {
   background-size: cover;
   background-color: #5cacea;
   margin: 0;
-  height: fit-content;
 }
 #card {
   /* width: auto; */
@@ -60,7 +59,8 @@ h1 {
 }
 .rise {
   text-shadow: -0.01em -0.01em 0.01em #000;
-
+  animation: rise 1s forwards;
+  animation-timing-function: ease-in-out;
 }
 @keyframes rise {
   to {
@@ -68,16 +68,37 @@ h1 {
     transform: translateY(-0.025em) translateX(0.04em);
   }
 }
+.container1{
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    padding: auto;
+    margin: auto;
+    /* padding-top: 177.77%; 9:16 Aspect Ratio (divide 16 by 9 = 1.777) */
+  }
+  
+  /* Then style the iframe to fit in the container div with full height and width */
+  .responsive-iframe {
+    position: inherit;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 331px;
+    height: 571px;
+
+  }
+
+
 footer {
   margin-top: calc(100vh);
+  height: 70px;
   background-color: #000000;
   color: #ffffff;
   box-shadow: 2px 2px 2px 5px rgba(39, 38, 38, 0.2);
   z-index: 1;
-  bottom: -40px;
-  left: -10px;
   position: fixed;
-  left: 0;
   bottom: 0;
   width: 100%;
   text-align: center;
